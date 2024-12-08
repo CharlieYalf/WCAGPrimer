@@ -1,3 +1,7 @@
+---
+title: 1.4 Distinguishable
+---
+
 # 1.4 Distinguishable
 
 Make it easier for users to see and hear content including separating foreground from background.
