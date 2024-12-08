@@ -1,4 +1,5 @@
-title: Accessibility Audit Guide
-description: Internal accessibility auditing process guide
-theme: jekyll-theme-minimal
-markdown: kramdown 
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+title: WCAG Primer
+description: Internal accessibility auditing process guide 
