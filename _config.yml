@@ -1,5 +1,11 @@
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: WCAG Primer
-description: Internal accessibility auditing process guide 
+title: Testing Process Guide
+description: Internal accessibility testing process guide
+defaults:
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "default"

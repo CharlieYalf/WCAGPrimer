@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+            <li>
+                <a href="{{ '/guidelines/1.4-distinguishable/' | relative_url }}" {% if page.url contains '1.4-distinguishable' %}class="active"{% endif %}>1.4 Distinguishable</a>
+                <ul>
+                    <li><a href="{{ '/guidelines/1.4-distinguishable/1.4.1-use-of-color' | relative_url }}" {% if page.url contains '1.4.1-use-of-color' %}class="active"{% endif %}>1.4.1 Use of Color</a></li>
+                    <!-- Add more success criteria as needed -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <script>
+        // Add active class to current page link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname;
+            const links = document.querySelectorAll('.sidebar-nav a');
+            
+            links.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
