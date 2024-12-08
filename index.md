@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Accessibility Audit Guide
+# Testing Process Guide
 
 This guide provides a structured approach to conducting accessibility audits for our projects, following WCAG 2.2 guidelines.
 
